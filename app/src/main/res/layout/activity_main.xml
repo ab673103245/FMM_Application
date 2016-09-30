@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="qianfeng.fmm_application.MainActivity">
+
+    <!--<fragment-->
+        <!--android:id="@+id/fragment"-->
+        <!--android:name="qianfeng.fmm_application.AboveFragment"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="200dp"-->
+        <!--android:text="Hello World!" />-->
+
+    <!--<TextView-->
+        <!--android:text="hello world!!!!!!!!!!!!!!"-->
+
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:text="选项1"
+            android:checked="true"
+            style="@style/style_RadioButton"
+            />  <RadioButton
+            android:id="@+id/rb2"
+            android:text="选项2"
+            style="@style/style_RadioButton"
+            />  <RadioButton
+            android:id="@+id/rb3"
+            android:text="选项3"
+            style="@style/style_RadioButton"
+            />  <RadioButton
+            android:id="@+id/rb4"
+            android:text="选项4"
+            style="@style/style_RadioButton"
+            />
+    </RadioGroup>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_above="@id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+
+
+</RelativeLayout>
